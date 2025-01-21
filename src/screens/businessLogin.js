@@ -1,10 +1,10 @@
 // BusinessLoginScreen.js
 import React, {useState} from 'react';
 import { View, Text, StyleSheet, Pressable} from 'react-native';
-import FrmButton from '../src/components/form/FormButton';
-import FrmLabel from '../src/components/form/FormLabel';
-import FrmInput from '../src/components/form/FormTextInput';
-import Header from '../src/components/Header';
+import FrmButton from '../components/form/FormButton';
+import FrmLabel from '../components/form/FormLabel';
+import FrmInput from '../components/form/FormTextInput';
+import Header from '../components/Header';
 import { useNavigation } from '@react-navigation/native';
 
 /* used custom components for label, input, buttons and header */

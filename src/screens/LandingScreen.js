@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, SafeAreaView, View, Image, Text } from 'react-native';
-import FrmButton from '../src/components/form/FormButton';
+import FrmButton from '../components/form/FormButton';
 import { useNavigation } from '@react-navigation/native';
 
 const LandingScreen = () => {
@@ -12,7 +12,7 @@ const LandingScreen = () => {
           alt="App Logo"
           resizeMode="contain"
           style={styles.headerImg}
-          source={require('../src/images/tiffin.png')}
+          source={require('../images/tiffin.png')}
         />
         <Text style={styles.title}>
           The <Text style={{ color: '#d39900' }}>TiffinApp</Text>

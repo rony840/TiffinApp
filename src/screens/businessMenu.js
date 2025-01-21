@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, FlatList, Pressable } from 'react-native';
-import Header from '../src/components/Header';
+import Header from '../components/Header';
 
 /*used Flatlist to display food items */
 /*plus button adds a food item to the business menu */

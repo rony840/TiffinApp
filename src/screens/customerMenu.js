@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { View, Text, StyleSheet, FlatList, RefreshControl, Modal, Pressable } from 'react-native';
-import Header from '../src/components/Header';
+import Header from '../components/Header';
 
 /*used modal here to display description of food items */
 /*used refreshcontrol to display new food items but it basically spawns a new food item*/

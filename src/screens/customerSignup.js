@@ -1,10 +1,10 @@
 // CustomerLoginScreen.js
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import FrmButton from '../src/components/form/FormButton';
-import FrmLabel from '../src/components/form/FormLabel';
-import FrmInput from '../src/components/form/FormTextInput';
-import Header from '../src/components/Header';
+import FrmButton from '../components/form/FormButton';
+import FrmLabel from '../components/form/FormLabel';
+import FrmInput from '../components/form/FormTextInput';
+import Header from '../components/Header';
 
 //uses custom components for input, label and button
 
