@@ -1,8 +1,10 @@
 import React from 'react';
 import { StyleSheet, SafeAreaView, View, Image, Text } from 'react-native';
-import FrmButton from '../src/components/form/formButton';
+import FrmButton from '../src/components/form/FormButton';
+import { useNavigation } from '@react-navigation/native';
 
-const WelcomeScreen = ({ navigation }) => {
+const LandingScreen = () => {
+  const navigation = useNavigation();
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: '#e8ecf4' }}>
       <View style={styles.header}>
@@ -66,4 +68,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default WelcomeScreen;
+export default LandingScreen;

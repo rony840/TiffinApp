@@ -1,12 +1,12 @@
 // CustomerLoginScreen.js
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import FrmButton from '../src/components/form/formButton';
-import FrmLabel from '../src/components/form/formLabel';
-import FrmInput from '../src/components/form/formTextInput';
+import FrmButton from '../src/components/form/FormButton';
+import FrmLabel from '../src/components/form/FormLabel';
+import FrmInput from '../src/components/form/FormTextInput';
 import Header from '../src/components/Header';
 
-const BusinessSignup = ({navigation}) => {
+const BusinessSignupScreen = ({navigation}) => {
   
   const handleSignUp = () =>{
     navigation.navigate('BusinessLogin');
@@ -53,4 +53,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default BusinessSignup;
+export default BusinessSignupScreen;

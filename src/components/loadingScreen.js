@@ -1,10 +1,13 @@
 import React, { useEffect } from 'react';
 import { View, Text, ActivityIndicator, StyleSheet, Image } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
-const LoadingScreen = ({ navigation }) => {
+const LoadingScreen = () => {
+  const navigation = useNavigation();
+  
   useEffect(() => {
     setTimeout(() => {
-      navigation.replace('Welcome'); // After 2 seconds, go to Welcome screen
+      navigation.replace('Landing'); // After 2 seconds, go to Welcome screen
     }, 2000); // Adjust this time as needed
   }, [navigation]);
 
