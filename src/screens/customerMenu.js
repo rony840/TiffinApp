@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { View, Text, StyleSheet, FlatList, RefreshControl, Modal, Pressable } from 'react-native';
+import { View, SafeAreaView,Text, StyleSheet, FlatList, RefreshControl, Modal, Pressable } from 'react-native';
 import Header from '../components/Header';
 
 /*used modal here to display description of food items */
@@ -42,7 +42,7 @@ const CustomerMenuScreen = ({ route }) => {
   };
 
   return (
-    <View style={styles.page}>
+    <SafeAreaView style={styles.page}>
       <Header title={`Welcome ${username}`} TxtStyle={{color: 'white'}}/>
 
       <FlatList
@@ -71,7 +71,7 @@ const CustomerMenuScreen = ({ route }) => {
           </View>
         </View>
       </Modal>
-    </View>
+    </SafeAreaView>
   );
 };
 

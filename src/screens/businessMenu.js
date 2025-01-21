@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, FlatList, Pressable } from 'react-native';
+import { View, Text, StyleSheet, FlatList, Pressable,SafeAreaView } from 'react-native';
 import Header from '../components/Header';
 
 /*used Flatlist to display food items */
@@ -29,7 +29,7 @@ const BusinessMenuScreen = () => {
   );
 
   return (
-    <View style={styles.page}>
+    <SafeAreaView style={styles.page}>
       <Header title="Business Menu" TxtStyle={{ color: 'white' }} />
 
       <FlatList
@@ -42,7 +42,7 @@ const BusinessMenuScreen = () => {
       <Pressable onPress={handleAddItem} style={styles.addButtonContainer}>
         <Text style={styles.addButtonText}>+ Add Item</Text>
       </Pressable>
-    </View>
+    </SafeAreaView>
   );
 };
 

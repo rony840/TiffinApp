@@ -1,6 +1,6 @@
 // CustomerLoginScreen.js
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, SafeAreaView } from 'react-native';
 import FrmButton from '../components/form/FormButton';
 import FrmLabel from '../components/form/FormLabel';
 import FrmInput from '../components/form/FormTextInput';
@@ -13,7 +13,7 @@ const CustomerSignupScreen = ({navigation}) => {
     navigation.navigate('CustomerLogin');
   };
   return(
-    <View style={styles.page}>
+    <SafeAreaView style={styles.page}>
     <Header title={'TiffinApp - Customer Sign Up'} TxtStyle={{color: 'white'}}/>
     <View style={styles.container}>
         <FrmLabel title={'First Name'}/>
@@ -32,7 +32,7 @@ const CustomerSignupScreen = ({navigation}) => {
 
     </View>
     
-  </View>
+  </SafeAreaView>
   );
 }
   
